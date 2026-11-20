@@ -1,0 +1,56 @@
+=== RUN   TestSequentialReturnsAllPairs
+--- PASS: TestSequentialReturnsAllPairs (0.16s)
+=== RUN   TestSequentialStopsWhenCanceled
+=== PAUSE TestSequentialStopsWhenCanceled
+=== RUN   TestPoolWorkerCounts
+=== RUN   TestPoolWorkerCounts/workers_1
+=== PAUSE TestPoolWorkerCounts/workers_1
+=== RUN   TestPoolWorkerCounts/workers_2
+=== PAUSE TestPoolWorkerCounts/workers_2
+=== RUN   TestPoolWorkerCounts/workers_4
+=== PAUSE TestPoolWorkerCounts/workers_4
+=== RUN   TestPoolWorkerCounts/workers_8
+=== PAUSE TestPoolWorkerCounts/workers_8
+=== RUN   TestPoolWorkerCounts/workers_16
+=== PAUSE TestPoolWorkerCounts/workers_16
+=== CONT  TestPoolWorkerCounts/workers_1
+=== CONT  TestPoolWorkerCounts/workers_16
+=== CONT  TestPoolWorkerCounts/workers_2
+=== CONT  TestPoolWorkerCounts/workers_8
+=== CONT  TestPoolWorkerCounts/workers_4
+--- PASS: TestPoolWorkerCounts (0.00s)
+    --- PASS: TestPoolWorkerCounts/workers_16 (0.02s)
+    --- PASS: TestPoolWorkerCounts/workers_2 (0.08s)
+    --- PASS: TestPoolWorkerCounts/workers_8 (0.02s)
+    --- PASS: TestPoolWorkerCounts/workers_1 (0.16s)
+    --- PASS: TestPoolWorkerCounts/workers_4 (0.04s)
+=== RUN   TestPoolSpeedupWithFourWorkers
+--- PASS: TestPoolSpeedupWithFourWorkers (0.20s)
+=== RUN   TestPoolRejectsBadWorkerCount
+=== PAUSE TestPoolRejectsBadWorkerCount
+=== RUN   TestPoolHandlesEmptyInput
+=== PAUSE TestPoolHandlesEmptyInput
+=== RUN   TestPoolReturnsPartialOnTimeout
+=== PAUSE TestPoolReturnsPartialOnTimeout
+=== RUN   TestPoolCanceledBeforeStartReturnsFast
+--- PASS: TestPoolCanceledBeforeStartReturnsFast (0.00s)
+=== RUN   TestPoolStopsAllWorkers
+--- PASS: TestPoolStopsAllWorkers (0.25s)
+=== RUN   TestNewPoolValidatesWorkers
+=== PAUSE TestNewPoolValidatesWorkers
+=== RUN   TestSortByInputKeepsOrder
+=== PAUSE TestSortByInputKeepsOrder
+=== CONT  TestSequentialStopsWhenCanceled
+--- PASS: TestSequentialStopsWhenCanceled (0.00s)
+=== CONT  TestSortByInputKeepsOrder
+--- PASS: TestSortByInputKeepsOrder (0.00s)
+=== CONT  TestNewPoolValidatesWorkers
+--- PASS: TestNewPoolValidatesWorkers (0.00s)
+=== CONT  TestPoolReturnsPartialOnTimeout
+=== CONT  TestPoolHandlesEmptyInput
+--- PASS: TestPoolHandlesEmptyInput (0.00s)
+=== CONT  TestPoolRejectsBadWorkerCount
+--- PASS: TestPoolRejectsBadWorkerCount (0.00s)
+--- PASS: TestPoolReturnsPartialOnTimeout (0.33s)
+PASS
+ok  	lab/concurrency	1.112s
